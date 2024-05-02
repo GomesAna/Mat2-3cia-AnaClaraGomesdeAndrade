@@ -56,16 +56,6 @@ body{
 
 }
 
-
-.botao:first-child{
-    border-radius: 40px 40px 0 0;
-}
-
-
-.botoes {
-    display: block;
-}
-
 .botao.ativo {
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
@@ -79,10 +69,6 @@ body{
 
 .aba-conteudo.ativo {
     display: block;
-}
-
-.aba-conteudo {
-    display: none;
 }
 
 .aba-conteudo-titulo-principal {
@@ -102,19 +88,16 @@ body{
 }
 
 
-@media screen and (min-width:768px) {
-    .botoes{
-        display:flex;
+@media screen and (min-width: 768px) {
+    .botoes {
+        display: flex;
     }
-    .botao:first-child{
+
+    .botao:first-child {
         border-radius: 40px 0 0 0;
     }
-    .botao:last-child{
+
+    .botao:last-child {
         border-radius: 0 40px 0 0;
     }
-    
-}
-.ativo{
-    background-color: var(--botao-ativo);
-    border-bottom:4px solid var(--verde);
 }
